@@ -9,3 +9,25 @@ spec:
   type: service
   lifecycle: experimental
   owner: "group:default/team-a"
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: pets-api
+  description: The petstore API
+  tags:
+    - store
+    - rest
+  links:
+    - url: https://github.com/swagger-api/swagger-petstore
+      title: GitHub Repo
+      icon: github
+    - url: https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml
+      title: API Spec
+      icon: code
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: "group:default/team-a"
+  definition:
+    $text: ./pets.oas.yaml
