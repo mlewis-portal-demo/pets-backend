@@ -9,6 +9,8 @@ spec:
   type: service
   lifecycle: experimental
   owner: "group:default/team-a"
+  providesApi:
+    - api:default/pets-api
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
