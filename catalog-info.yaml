@@ -10,7 +10,7 @@ spec:
   lifecycle: experimental
   owner: "group:default/team-a"
   providesApi:
-    - api:default/pets-api
+    - pets-api
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
